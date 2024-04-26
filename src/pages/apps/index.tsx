@@ -4,8 +4,8 @@ import { queryCall } from "@src/service/forge"
 import { GetStaticProps } from "next"
 import Link from "next/link"
 
-export default function Posts({ apps }: { apps: AppView[] }) {
-  console.log("🚀 ~ Posts ~ apps:", apps)
+export default function Apps({ apps }: { apps: AppView[] }) {
+  console.log("🚀 ~ Apps :", apps)
   return (
     <div className="container">
       <div className="flex mt-4">
@@ -13,7 +13,7 @@ export default function Posts({ apps }: { apps: AppView[] }) {
           <div key={index} className="col-md-4 border p-4">
             <h2>{app.name}</h2>
             <p>{app.description}</p>
-            <Link href={`/posts/${app.app_id}`} shallow>
+            <Link href={`/apps/${app.app_id}`} shallow>
               View
             </Link>
           </div>
