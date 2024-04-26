@@ -1,19 +1,18 @@
-"use client"
 import { AppView } from "@src/service/b3forge/b3forge.did"
-import { queryCall } from "@src/service/forge"
 
-export default function Post(app: AppView) {
+export default function Apps(app: AppView) {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-12">
-          <h1>{app.name}</h1>
-          <p>{app.description}</p>
-        </div>
+    <div className="container p-2">
+      <PageHeader title={app.name} />
+      <div className="border p-4">
+        <p>{app.description}</p>
       </div>
     </div>
   )
 }
+
+import { queryCall } from "@src/service/forge"
+import PageHeader from "@src/components/page-header"
 
 export async function getStaticPaths() {
   const { dataPromise } = queryCall({

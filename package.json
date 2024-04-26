@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ic-reactor/core": "^1.6.3",
+    "@ic-reactor/parser": "^0.1.1",
     "@ic-reactor/react": "^1.6.4",
     "next": "14.2.3",
     "next-themes": "^0.3.0",

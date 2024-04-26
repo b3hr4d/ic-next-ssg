@@ -178,6 +178,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ic-reactor/parser@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "@ic-reactor/parser@npm:0.1.1"
+  checksum: 10c0/bda4393041878efb82f273a1abb8c7e246e691eeaab2778fcb73a2cbfaea52a526aac61bfa22b2286540adc6c3fc9b645abca0a085c567a50eeb5e351636a355
+  languageName: node
+  linkType: hard
+
 "@ic-reactor/react@npm:^1.6.4":
   version: 1.6.4
   resolution: "@ic-reactor/react@npm:1.6.4"
@@ -2907,6 +2914,7 @@ __metadata:
   resolution: "next-ssg@workspace:."
   dependencies:
     "@ic-reactor/core": "npm:^1.6.3"
+    "@ic-reactor/parser": "npm:^0.1.1"
     "@ic-reactor/react": "npm:^1.6.4"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
