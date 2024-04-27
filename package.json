@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@ic-reactor/core": "^1.6.4",
-    "@ic-reactor/parser": "^0.1.2",
-    "@ic-reactor/react": "^1.6.5",
+    "@ic-reactor/core": "^1.6.5",
+    "@ic-reactor/parser": "^0.2.0",
+    "@ic-reactor/react": "^1.6.6",
     "next": "14.2.3",
     "next-themes": "^0.3.0",
     "react": "^18",

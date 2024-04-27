@@ -1,7 +1,6 @@
 import { ActorProvider } from "@ic-reactor/react"
 import Methods from "@src/components/methods"
 import PageHeader from "@src/components/page-header"
-import { adapter } from "@src/service/adapter"
 
 export default function Canister({
   candid,
@@ -36,20 +35,21 @@ export default function Canister({
 
 export async function getStaticPaths() {
   const paths = [
-    { id: "ss2fx-dyaaa-aaaar-qacoq-cai" },
-    { id: "s3zol-vqaaa-aaaar-qacpa-cai" },
-    { id: "xeka7-ryaaa-aaaal-qb57a-cai" },
-    { id: "xob7s-iqaaa-aaaar-qacra-cai" },
-  ].map(({ id }) => ({ params: { id } }))
-
+    { params: { id: "ss2fx-dyaaa-aaaar-qacoq-cai" } },
+    { params: { id: "s3zol-vqaaa-aaaar-qacpa-cai" } },
+    { params: { id: "xeka7-ryaaa-aaaal-qb57a-cai" } },
+    { params: { id: "xob7s-iqaaa-aaaar-qacra-cai" } },
+  ]
   return {
     paths,
     fallback: false,
   }
 }
 
+import { fetchCandidDefinition } from "@src/service/adapter"
+
 export async function getStaticProps({ params }: { params: { id: string } }) {
-  const candid = await adapter.fetchCandidDefinition(params.id)
+  const candid = await fetchCandidDefinition(params.id)
 
   return {
     props: {
