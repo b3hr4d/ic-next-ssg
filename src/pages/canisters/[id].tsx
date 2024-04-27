@@ -49,7 +49,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: { params: { id: string } }) {
-  const candid = await adapter.getFromMetadata(params.id)
+  const candid = await adapter.fetchCandidDefinition(params.id)
 
   return {
     props: {

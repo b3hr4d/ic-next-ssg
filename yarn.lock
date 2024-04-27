@@ -158,9 +158,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ic-reactor/core@npm:^1.6.3":
-  version: 1.6.3
-  resolution: "@ic-reactor/core@npm:1.6.3"
+"@ic-reactor/core@npm:^1.6.4":
+  version: 1.6.4
+  resolution: "@ic-reactor/core@npm:1.6.4"
   dependencies:
     "@dfinity/agent": "npm:^1.2"
     "@dfinity/auth-client": "npm:^1.2"
@@ -174,22 +174,22 @@ __metadata:
     "@dfinity/candid": ^1.2
     "@dfinity/identity": ^1.2
     "@dfinity/principal": ^1.2
-  checksum: 10c0/175c510196e3a8fb4a265da913032f87c2a56b3d597c68c80ab1d5a001596a049d45dca0ed906a59fd027f243b30bac6266c44dc619e4dbf6373b44a0281228d
+  checksum: 10c0/aa66f16cac0482574720500ec9b3ed0904043e2b18b0f79c63c83d04fc8ed3fb6c31b5001b21d5341295f9a8238de22a2ffc99dac492c9bbf61a2a76368fbf49
   languageName: node
   linkType: hard
 
-"@ic-reactor/parser@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "@ic-reactor/parser@npm:0.1.1"
-  checksum: 10c0/bda4393041878efb82f273a1abb8c7e246e691eeaab2778fcb73a2cbfaea52a526aac61bfa22b2286540adc6c3fc9b645abca0a085c567a50eeb5e351636a355
+"@ic-reactor/parser@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "@ic-reactor/parser@npm:0.1.2"
+  checksum: 10c0/eadf60513326fb6d1b76503b28320206dc88a6998f4df87f528b7128856652cdad17d2d9705d52e2c2999a33671d0f23c982ba5398295ba86b5aff08cad55f6c
   languageName: node
   linkType: hard
 
-"@ic-reactor/react@npm:^1.6.4":
-  version: 1.6.4
-  resolution: "@ic-reactor/react@npm:1.6.4"
+"@ic-reactor/react@npm:^1.6.5":
+  version: 1.6.5
+  resolution: "@ic-reactor/react@npm:1.6.5"
   dependencies:
-    "@ic-reactor/core": "npm:^1.6.3"
+    "@ic-reactor/core": "npm:^1.6.4"
     zustand-utils: "npm:^1.3"
   peerDependencies:
     "@dfinity/agent": ^1.2
@@ -199,7 +199,7 @@ __metadata:
     "@dfinity/principal": ^1.2
     react: ">=16.8"
     zustand: 4.5
-  checksum: 10c0/1c873cb797468c207ee4136d33657b6b9b4e5513ddf5f64452c2392b4beb6771df75acd8f4a8741f7b072394cea216a10926f932be35aaf958cc28de5e69e530
+  checksum: 10c0/5f65f4fa1e32ee3941290de982aa5d8f087d9a5d7b3ab867918947930209be7465cf59affbbeb2373b4076b43a4842a0fe4c27d05ce7db39ff90b12edb2afacb
   languageName: node
   linkType: hard
 
@@ -2913,9 +2913,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "next-ssg@workspace:."
   dependencies:
-    "@ic-reactor/core": "npm:^1.6.3"
-    "@ic-reactor/parser": "npm:^0.1.1"
-    "@ic-reactor/react": "npm:^1.6.4"
+    "@ic-reactor/core": "npm:^1.6.4"
+    "@ic-reactor/parser": "npm:^0.1.2"
+    "@ic-reactor/react": "npm:^1.6.5"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
